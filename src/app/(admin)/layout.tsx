@@ -6,7 +6,7 @@ export interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
-  console.log('render');
+  console.log('rendering layout');
 
   return (
     <>

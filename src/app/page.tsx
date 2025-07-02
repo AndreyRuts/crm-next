@@ -2,6 +2,7 @@
 // import ServerComponent from '@/app/components/server-component';
 // import ServerComponentCopy from '@/app/components/server-component copy';
 import AddCompanyButton from './components/add-company-button';
+import MagicButton from './components/magic-button';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AddCompanyButton />
       {/* <ServerComponent /> */}
       {/* <ClientComponent><ServerComponentCopy /></ClientComponent> */}
+      <MagicButton />
     </main>
   );
 }
