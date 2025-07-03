@@ -6,9 +6,15 @@ import React from 'react';
 export interface InputFieldProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
+  as?: React.ElementType;
 }
 
-export default function InputField({ label, id, ...rest }: InputFieldProps) {
+export default function InputField({
+  label,
+  id,
+  as,
+  ...rest
+}: InputFieldProps) {
   return (
     <div className="flex flex-col">
       {label && (
@@ -20,6 +26,7 @@ export default function InputField({ label, id, ...rest }: InputFieldProps) {
         {...rest}
         id={id}
         className="p-3 h-11 text-sm rounded border border-gray-300 shadow"
+        as={as}
       />
     </div>
   );
