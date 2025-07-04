@@ -8,7 +8,11 @@ export default function Page() {
   const router = useRouter();
   return (
     <Modal show={true} onClose={() => router.back()}>
-      <CompanyForm onSubmit={console.log} />
+      <CompanyForm
+        onSubmit={() => {
+          router.back();
+        }}
+      />
     </Modal>
   );
 }
